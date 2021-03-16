@@ -5,6 +5,7 @@ import TopPage from './pages/TopPage'
 import MyPage from './pages/MyPage'
 import SubmitPage from './pages/SubmitPage'
 import ContentsPage from './pages/ContentsPage'
+import { connect } from 'react-redux';
 
 function App(props) {
   function selectPage(){
@@ -29,4 +30,5 @@ function App(props) {
   );
 }
 
+App = connect ((state) => state)(App)
 export default App;
